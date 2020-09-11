@@ -290,3 +290,8 @@ __pycache__/
 .vscode
 
 src/bc-shipping/scheduler/target/*
+
+*.tgz
+*.lock
+*.key
+*.crt
