@@ -22,7 +22,7 @@ FROM build AS publish
 MAINTAINER Fernando Antivero (https://github.com/ferantivero)
 
 WORKDIR /app
-RUN dotnet publish /app/dronescheduler/Fabrikam.DroneDelivery.DroneSchedulerService/ -c release -o ./out --no-restore
+RUN dotnet publish /app/dronescheduler/Fabrikam.DroneDelivery.DroneSchedulerService/ -c release -o ./out
 
 FROM base AS runtime
 

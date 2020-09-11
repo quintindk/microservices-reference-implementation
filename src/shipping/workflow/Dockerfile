@@ -8,7 +8,7 @@ COPY Fabrikam.Workflow.Service/Fabrikam.Workflow.Service.csproj .
 RUN dotnet restore Fabrikam.Workflow.Service.csproj
 
 COPY Fabrikam.Workflow.Service/. .
-RUN dotnet build Fabrikam.Workflow.Service.csproj -c release -o /app --no-restore
+RUN dotnet build Fabrikam.Workflow.Service.csproj -c release -o /app
 
 FROM build AS testrunner
 WORKDIR /src/tests
